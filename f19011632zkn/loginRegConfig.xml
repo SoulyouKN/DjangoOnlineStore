@@ -1,0 +1,27 @@
+<node>
+    <case>
+        <username>Johnson</username>
+        <password>1234</password>
+        <email>Johnson@126.com</email>
+    </case>
+    <case>
+        <TestId>loginReg-testcase001</TestId>
+        <Title>用户注册</Title>
+        <Method>post</Method>
+        <Desc>注册用户名已存在</Desc>
+        <url>http://127.0.0.1:8000/register</url>
+        <InptArg>{"username":"Johnson","password":"12345","email":"Johnson@126.com"}</InptArg>
+        <Result>200</Result>
+        <CheckWord>用户名已存在</CheckWord>
+    </case>
+        <case>
+            <TestId>loginReg-testcase001</TestId>
+            <Title>用户注册</Title>
+            <Method>post</Method>
+            <Desc>注册用户名已存在</Desc>
+            <url>http://127.0.0.1:8000/register</url>
+            <InptArg>{"username":"smith","password":"12345","email":"smith@126.com"}</InptArg>
+            <Result>200</Result>
+            <CheckWord>登录</CheckWord>
+        </case>
+</node>

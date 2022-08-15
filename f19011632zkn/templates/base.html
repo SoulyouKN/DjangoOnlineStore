@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>f19011632电子商务系统</title>
+		<link href="{% static 'css/signin.css' %}" rel="stylesheet"-->
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"-->
+	</head>
+
+	<body role="document">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/goods_views/">电子商务系统</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/good_view/">商品列表</a></li>
+						<li class="active"><a href="/view_all_order/">查看所有订单</a></li>
+	{% block content %}
+	{% endblock %}
+		<div class="container theme-showcase" role="main">
+			<div class="page-header">
+			</div>
+			<footer class="footer">
+				<p>&copy;f19011632詹康宁Django开发</p>
+			</footer>
+		</div>
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.ks"></script>
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>
